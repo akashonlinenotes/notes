@@ -126,543 +126,604 @@
         </div>
         
         <!-- 11 -->
-        <button class="accordion">11. What is the meaning of elepant?</button>
+        <button class="accordion">11.
+        Consider the following file - http://screencast.com/t/AZiz5VwL4IGg. Answer the following questions :<br>
+		(i) With what name should we save this file ?<br>
+		(ii) Can we save this file as A.java ?<br>
+		(iii) Suppose we have saved this file with the name "A.java".<br>
+		 - Write the syntax for compiling the code.<br>
+		 - Write the syntax for executing the code.<br>
+		(iv) Suppose we have saved this file with the name "Akash.java".<br>
+		 - Write the syntax for compiling the code.<br>
+		 - Write the syntax for executing the code.
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	(i) We can save this file with any valid name of our choice with ".java" extension<br>
+			(ii) Yes, we can save this file as "A.java"<br>
+			(iii)<br>
+			 - javac A.java<br>
+			 - java A<br>
+			(iv)<br>
+			 - javac Akash.java<br>
+			 - java A
+          </p>
         </div>
         
         <!-- 12 -->
-        <button class="accordion">12. What is the meaning of elepant?</button>
+        <button class="accordion">12. What is a general convention for naming the java source file ? Also explain the reason behind such a convention ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	The general convention is - "The name of the java source file should be similar to the name of the class that contains the main() method". This convention is completely wrong but is prevelant because mostly the scenario is that a java file contains multiple classes but only one of these class contains the main() method (although multiple classes in the same source file can contain main() method). Now, if we keep the name of the java source file similar to the name of the class that contains the main() method then we can compile and execute the code using the same name i.e the name of the class that contains the main() method or the name of the java source file (which is kept similar to the name of the class that contains the main() method). Refer : http://screencast.com/t/IKThqKfCEx (Video)
+          </p>
         </div>
         
         <!-- 13 -->
-        <button class="accordion">13. What is the meaning of elepant?</button>
+        <button class="accordion">13. Can we define a class without main() method ? If yes, what happens when to try to execute this class ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, When we try to execute this class, we get a runtime error as - "Main method not found"</p>
         </div>
         
         <!-- 14 -->
-        <button class="accordion">14. What is the meaning of elepant?</button>
+        <button class="accordion">14. When is the convention - "The name of the java source file should be similar to the name of the class that contains the main() method" valid and invalid ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	Valid in 2 cases :<br>
+			 - When there is only one class in the java file and this class contains the main() method.<br>
+			 - When there are multiple classes in the java file but only one of them contains the main() method.<br>
+			<br>
+			Invalid in 1 case :<br>
+			 - When there are multiple classes in the java file and more than one of them contain the main() method.
+          </p>
         </div>
         
         <!-- 15 -->
-        <button class="accordion">15. What is the meaning of elepant?</button>
+        <button class="accordion">15. Can a class contain more than one main() methods ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>No, each class should contain only one main() method (Please refer web for more info)</p>
         </div>
         
         <!-- 16 -->
-        <button class="accordion">16. What is the meaning of elepant?</button>
+        <button class="accordion">16. Is Java a case sensitive language ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, java is a case sensitive language. For eg, int cannot be written as INT in java.</p>
         </div>
         
         <!-- 17 -->
-        <button class="accordion">17. What is the meaning of elepant?</button>
+        <button class="accordion">17. Suppose there is a java file that contains one or more classes and none of these classes contains the main() method. Will this java file compile and run successfully ? Give reasons for your answer.</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	The java file will compile successfully but will not run successfully. It is because, while invoking the java compiler during compilation, the java compiler does not issue a call to the main() method. It simply checks for syntactical errors in code. So this is the reason why such a source file compiles successfully. But, when we execute such a source file then the execution reports an error. It is because, when we execute a java source file, then the jvm issues a call to the main() method, and since in this case, the jvm will not be able to locate the main() method it reports an error. So, the concept to remember is, "main() function is not called during compilation, it is called during execution by the java compiler.
+          </p>
         </div>
         
         <!-- 18 -->
-        <button class="accordion">18. What is the meaning of elepant?</button>
+        <button class="accordion">18. What is the extension of the java source file ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>".java"</p>
         </div>
         
         <!-- 19 -->
-        <button class="accordion">19. What is the meaning of elepant?</button>
+        <button class="accordion">19. What is the general syntax for compiling the java source file ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>[name of the java compiler] [name of the source file along with extension]. Ex, javac Abc.java</p>
         </div>
         
         <!-- 20 -->
-        <button class="accordion">20. What is the meaning of elepant?</button>
+        <button class="accordion">20. What is byte code ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Byte code is a set of instructions that is obtained on compiling a java source code.</p>
         </div>
         
         <!-- 21 -->
-        <button class="accordion">21. What is the meaning of elepant?</button>
+        <button class="accordion">21. What is the extension of the file that contains the byte code ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>".class"</p>
         </div>
         
         <!-- 22 -->
-        <button class="accordion">22. What is the meaning of elepant?</button>
+        <button class="accordion">22. Mention 2 important characteristics of java that are provided by the byte code ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	Byte code provides :<br>
+			1. Portability to java programs<br>
+			2. Platform independence to java
+          </p>
         </div>
         
         <!-- 23 -->
-        <button class="accordion">23. What is the meaning of elepant?</button>
+        <button class="accordion">23. How is the byte code generated ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Byte code is generated on compiling the java source code or by issuing a call to the java compiler.</p>
         </div>
         
         <!-- 24 -->
-        <button class="accordion">24. What is the meaning of elepant?</button>
+        <button class="accordion">24. Why is java platform independent or why are java programs portable ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Java is platform independent/ portable because of the byte code. On compiling a java source file, some ".class" files are generated that contain byte code. Now, since the byte code can be executed on any OS, therefore java is platform independent and java programs are portable.</p>
         </div>
         
         <!-- 25 -->
-        <button class="accordion">25. What is the meaning of elepant?</button>
+        <button class="accordion">25. How is the byte code executed ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Byte code is executed by jvm (java virtual machine) when we run our java program.</p>
         </div>
         
         <!-- 26 -->
-        <button class="accordion">26. What is the meaning of elepant?</button>
+        <button class="accordion">26. What happens when byte code is executed ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Byte code gets converted into machine code.</p>
         </div>
         
         <!-- 27 -->
-        <button class="accordion">27. What is the meaning of elepant?</button>
+        <button class="accordion">27. What is machine code ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Machine code contains a set of instructions that are written in binary form. This machine code can directly be executed by the OS.</p>
         </div>
         
         <!-- 28 -->
-        <button class="accordion">28. What is the meaning of elepant?</button>
+        <button class="accordion">28. Explain the significance of the command: java ABC</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>This command issues a call to jvm (java virtual machine) and asks jvm to execute the byte code that is present in the "ABC.class" file. The byte code present in the file "ABC.class" is executed and converted into machine code by the jvm.</p>
         </div>
         
         <!-- 29 -->
-        <button class="accordion">29. What is the meaning of elepant?</button>
+        <button class="accordion">29. FIB : The java source file has ________ extension. This java source file is executed by the _______ and we get _________ which has _________ extension.</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>".java", compiler [javac], byte code, ".class"</p>
         </div>
         
         <!-- 30 -->
-        <button class="accordion">30. What is the meaning of elepant?</button>
+        <button class="accordion">30. FIB (continued) :  This byte code is executed by the _______ and we get ________ which is executed by the __________ </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>jvm [java], machine code, OS</p>
         </div>
         
         <!-- 31 -->
-        <button class="accordion">31. What is the meaning of elepant?</button>
+        <button class="accordion">31. FIB : On compiling we get ________ and on running we get ___________</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>byte code, machine code</p>
         </div>
         
         <!-- 32 -->
-        <button class="accordion">32. What is the meaning of elepant?</button>
+        <button class="accordion">32. How is the process of executing programs in Java different as compared to other languages ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>All languages need to convert the source code into machine code so that this code can be understood and executed by the OS. In Java, this is a 2 step process where as in other programming languages, this is a 1 step process. In Java, the compiler converts the source code into byte code and then in the 2nd step, the jvm converts this byte code into machine code. However, in other languages, the source code is directly converted into machine code by the compiler. So this is where Java is different as compared to other languages w.r.t the process of program execution. </p>
         </div>
         
         <!-- 33 -->
-        <button class="accordion">33. What is the meaning of elepant?</button>
+        <button class="accordion">33. Why is the execution time of java programs more as compared to other programming languages ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>The execution time of a program is nothing but the time in which the source code gets converted into machine code and gets executed by the OS. In the case of most other programming languages like C, the source code on compilation is directly converted into machine code and is executed by the OS thereafter. So, this is the reason why programming languages like C have very low compilation time. On the other hand, in the case of java, the execution time or the time in which the source code is converted into machine code and executed by the OS is more because, the source code is not directly converted into machine code by the compiler. The compiler converts the source code into byte code. This byte code is now converted into machine code by the jvm and then executed by the OS. So, this is the reason why the execution time of java programs is much more as compared to other programming languages.</p>
         </div>
         
         <!-- 34 -->
-        <button class="accordion">34. What is the meaning of elepant?</button>
+        <button class="accordion">34. Give 2 advantages and 1 disadvantage of byte code ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	Advantages : <br>
+			1. Byte code provides portability to java programs<br>
+			2. Byte code is responsible for platform independent nature of java<br>
+			<br>
+			Disadvantage :<br>
+			1. The presence of byte code in between source code and machine code increase the execution time of java programs thereby compromising on the performance of java
+          </p>
         </div>
         
         <!-- 35 -->
-        <button class="accordion">35. What is the meaning of elepant?</button>
+        <button class="accordion">35. What is JIT ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>JIT is an acronym for Just-In-Time. JIT is a compiler that is a part of JVM and helps JVM to convert the byte code into machine code in a much lesser time as compared to the case when JIT is not included in JVM. Thus, JIT is a part of JVM that improves the performance of JVM by helping JVM to convert byte code into machine code at a much faster rate.</p>
         </div>
         
         <!-- 36 -->
-        <button class="accordion">36. What is the meaning of elepant?</button>
+        <button class="accordion">36. What mechanism does JIT apply to improve the performance of JVM ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Although there are many mechanisms that JIT uses for improving the performance of JVM, here is one of the approach - The JIT groups similar instructions (for example, all instrctions involving printing to console or System.out.println() )together and converts them into machine code at the same time (Had there been only JVM, it would have converted even the similar instructions one by one into machine code thereby requiring more time)</p>
         </div>
         
         <!-- 37 -->
-        <button class="accordion">37. What is the meaning of elepant?</button>
+        <button class="accordion">37. What is the difference between a compiled language and an interpreted language ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	A compiled language is one in which the source code is directly converted to machine code on compilation. Ex, C<br>
+			<br>
+			For example, an addition "+" operation in your source code could be translated directly to the "ADD" instruction in machine code.<br>
+			<br>
+			X + Y (SOURCE CODE) -------> 0010110100010011110010111 (MACHINE CODE)<br>
+			<br>
+			where as,<br>
+			<br>
+			An interpreted language is one in which the source code is not directly converted to machine code. Instead, it is converted to some intermediate code (which is called byte code in the case of java) and then this intermediate code is then converted into machine code. Ex, Java<br>
+			<br>
+			X + Y (SOURCE CODE) -------> ^&*S^#@!# (INTERMEDIATE CODE) -------> 0010110100010011110010111 (MACHINE CODE)
+          </p>
         </div>
         
         <!-- 38 -->
-        <button class="accordion">38. What is the meaning of elepant?</button>
+        <button class="accordion">38. Is Java a compiled language or an interpreted language ? Give reason.</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Interpreted because the source code is not directly conveted to machine code</p>
         </div>
         
         <!-- 39 -->
-        <button class="accordion">39. What is the meaning of elepant?</button>
+        <button class="accordion">39. How is the byte code responsible for platform independent nature of java ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>When we compile a java source file , we get its byte code. This is a ".class" file. We can simple copy this ".class" file containing the byte code in a pendrive and copy it on machines having different environments and OS's. Now, any machine that has JVM installed on it will be able to execute this ".class" file and that is why, java is platform independent. (Here we assume that all machines have JVM installed on them)</p>
         </div>
         
         <!-- 40 -->
-        <button class="accordion">40. What is the meaning of elepant?</button>
+        <button class="accordion">40. Is JVM platform dependent ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, JVM is platform dependent. We have different JVM's available depending upon the OS's. For example, the JVM installed on a windows machine will not work if installed on a UNIX machine. Thus, although Java is platform independent yet JVM is platform dependent</p>
         </div>
         
         <!-- 41 -->
-        <button class="accordion">41. What is the meaning of elepant?</button>
+        <button class="accordion">41.What are comments ? How many types of comments are present in Java.</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	Comments are the remarks that are provided by the programmer while writing the program for better understanding of code. The contents of the comments are ignored by the compiler. In Java, we have 3 types of comments -<br> 
+			1. Singleline Comments<br>
+			2. Multiline comments<br>
+			3. Documentation comments
+          </p>
         </div>
         
         <!-- 42 -->
-        <button class="accordion">42. What is the meaning of elepant?</button>
+        <button class="accordion">42. What is the difference between the 3 types of comments we have in Java ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	1. Singleline Comments - begins with 2 forward slashes and ends with the line<br>
+			2. Multiline comments - begins with 1 forward slash and 1 star "/*" and ends with 1 star and forward slash "*/" on same or different line<br>
+			3. Documentation comments - begins with 1 forward slashes and 2 stars "/**" and ends with 1 star and forward slash "*/" on same or different line<br>
+		  </p>
         </div>
         
         <!-- 43 -->
-        <button class="accordion">43. What is the meaning of elepant?</button>
+        <button class="accordion">43. What is a documentation/doc comment in Java ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	A documentation/doc comment in java is a multiline comment that is used by the 'javadoc' tool present in JDK to generate a standard HTML file (format is similar as this : http://www.tutorialspoint.com/java/index.html) containing the text whatever has been mentioned in the doc comments. This HTML file can be viewed in a browser. For more details on how this works, refer this youtube video : https://www.youtube.com/watch?v=dKrCZY0bbhg. Note that every line of a doc comment should start with a star except the forst and last line. For ex,<br>
+			/**<br>
+			* This is Akash<br>
+			* This is Hyderabad<br>
+			* This is Gachibowli<br>
+			* This is Surya Mens PG<br>
+			*/ 
+		  </p>
         </div>
         
         <!-- 44 -->
-        <button class="accordion">44. What is the meaning of elepant?</button>
+        <button class="accordion">44. What are identifiers ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Identifiers are the names given to variable, method, class, object, array etc by the person who writes the code.</p>
         </div>
         
         <!-- 45 -->
-        <button class="accordion">45. What is the meaning of elepant?</button>
+        <button class="accordion">45. Is "main" an identifier or a keyword ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, since "main" is not a keyword in Java, therefore we can name a variable, class, object, array etc as "main" and therefore "main" is an identifier.</p>
         </div>
         
         <!-- 46 -->
-        <button class="accordion">46. What is the meaning of elepant?</button>
+        <button class="accordion">46. Can we use "main" as class name, function name and variable name in the same file ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, the rule is - "No 2 classes, no 2 functions, no 2 variables can have the same name", but same name can be used for a class, a method and a variable, an array and so on. Refer : http://ideone.com/LvsEBW</p>
         </div>
         
         <!-- 47 -->
-        <button class="accordion">47. What is the meaning of elepant?</button>
+        <button class="accordion">47. From where does the execution of any java program begins ? Tell the reason.</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>The execution of all java programs begin from the main() function of the class that is called by the JVM during execution. It is because, when we run our program using the syntax, java classname, then we are actually issuing a call to JVM. When JVM is called, it issues a call to the main() method present in the class that is run. So this is the reason why the execution of all java programs begin from the main() function.</p>
         </div>
         
         <!-- 48 -->
-        <button class="accordion">48. What is the meaning of elepant?</button>
+        <button class="accordion">48.
+        Explain the significance of -<br>
+		1. public<br>
+		2. static <br>
+		3. void <br>
+		4. String args[]<br>
+		in the declaration of main() function ? 
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	1 - public : "public" is an access specifier which ensures that the main() method can be accessed by any code outside the class in which it is defined. Now, since the main() method is called by the JVM during the time of executing the class, therefore it is mandatory for us to declare main() method using "public" access specifier.<br>
+			<br>
+			2 - static : When static is used with a class member, it can be accessed using the name of the class outside the class in which it is defined. Now, we know that the main() method is called by the JVM. The JVM calls the main() method without creating the object of the class that is executed. Therefore, since the main() method is static, the JVM calls it using the class name that is executed. For example, if during runtime, we executed the command as :<br>
+			> java ABC<br>
+			then the JVM will issue a call to the main() method as "ABC.main()" (without creating the object of the class ABC)<br>
+			<br>
+			3 - void : When void is used as a return type for a function, it signifies that the function does not return anything to the caller. Now, since the main() method is called by the JVM, therefore it is pointless to return something to JVM. Also, an attempt to do so is reported as an error by JVM<br>
+			<br>
+			4 - String args[] : String args[] is an array of strings. We can provide inputs to this array 'args' during the time we execute our program as :<br>
+			> java ABC Kanpur Lucknow Hyderabad<br>
+			Here the strings "Kanpur", "Lucknow", "Hyderabad" will be provided as an input to the array args.<br>
+			These strings are also known as command line arguments.
+          </p>
         </div>
         
         <!-- 49 -->
-        <button class="accordion">49. What is the meaning of elepant?</button>
+        <button class="accordion">49. What are command line arguments ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	Command line arguments are the Strings that are passed to the main() function while running the class file. An array of strings named 'args' acts as a parameter to the main() function for accepting these strings.<br>
+			For ex,<br>
+			> java ABC Kanpur Lucknow Hyderbad<br>
+			Here the strings "Kanpur", "Lucknow", "Hyderabad" are called command line arguments.
+          </p>
         </div>
         
         <!-- 50 -->
-        <button class="accordion">50. What is the meaning of elepant?</button>
+        <button class="accordion">50. What are modifiers ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	Modifiers are the keywords which when added before variable name, method name, class name, array name, object name etc, they change their significance. There are 2 types of modifiers - Access Modifiers and Non Access Modifiers.<br> 
+			1. Access Modifiers : There are 3 access modifiers - <br>
+			 (i) public<br>
+			 (ii) private<br>
+			 (iii) protected<br>
+			<br>
+			2. Non Access Modifiers : There are around 8 non access modifiers -<br> 
+			 (i) static<br>
+			 (ii) final<br>
+			 (iii) abstract<br>
+			 (iv) volatile<br>
+			 (v) transient<br>
+			 (vi) strictfp<br>
+			 (vii) native<br>
+			 (viii) synchronized
+          </p>
         </div>
         
         <!-- 51 -->
-        <button class="accordion">51. What is the meaning of elepant?</button>
+        <button class="accordion">51. Is it possible to modify the syntax of main() method declaration in Java ? If yes what could be the possible variations ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	To understand the modifications that can be done in the declaration of the main() function, we need to understand the following points :<br>
+			1 - Syntax of method declaration and using multiple modifiers.<br>
+			2 - Possible modifications in array declaration.<br>
+			3 - Concept of varargs.<br>
+			<br>
+			1 - Syntax of method declaration and using multiple modifiers :<br>
+			Following is the standard syntax for a method declaration :<br>
+			[modifiers] [return type] [name of the method]([Parameters])<br>
+			Now, it is not mandatory to use only one modifier while declaring a method. Multiple modifiers can be used for the purpose and they can be used in any order.<br>
+			In the declaration of main() method, we have 2 modifiers - public and static.<br>
+			Now since the modifiers can be used in any order, therefore this modification is perfectly valid :<br>
+			static public void main(String args[])<br>
+			Note that we cannot drop out 'public' nor we can replace it with 'protected' or 'private'. It is because the main() method is called by JVM which does not lie within the class/package/subclass in which the main() method has been defined.<br>
+			Note that we cannot drop out static because main() method is called by JVm without creating anuy objects of the class in which the main() method is present. It calls the main() method using the class name. Therefore, static cannot be dropped out as well.<br>
+			<br>
+			2 - Possible modifications in array declaration :<br>
+			There are 2 valid ways in which an array can be declared :<br>
+			int a[];<br>
+			int[] a;<br>
+			Therefore, we can modify the parameter for the main() function as :<br>
+			String[] args<br>
+			Therefore this is also a valid modification in the declaration of the main() function :<br>
+			public static void main(String[] args)<br>
+			<br>
+			3 - Concept of varargs :<br>
+			Varargs is an acronym for Variable Length arguments.<br>
+			A variable length argument is specified using three dots "...".<br>
+			Therefore this is also a valid modification in the declaration of the main() function :<br>
+			public static void main(String... args)<br>
+			<br>
+			Also, note that any permutations and combinations of the above allowed modifications are also valid. For example,<br>
+			static public void main(String... args)<br>
+			is perfectly valid.
+          </p>
         </div>
         
         <!-- 52 -->
-        <button class="accordion">52. What is the meaning of elepant?</button>
+        <button class="accordion">52.
+        		Which of the following variable declarations are valid :<br>
+			1 - public static final int x = 5;<br>
+			2 - final static public int x = 5;<br>
+			3 - static final public int x = 5;<br>
+			4 - public final static int x = 5;<br>
+			Give reason for your answer ? 
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>All are valid. It is because any number iof modifiers can be used in variable declaration in any order (Similar to the declaration of a method). In all the given declarations, public , static and final are the modifiers used interchangebly.</p>
         </div>
         
         <!-- 53 -->
-        <button class="accordion">53. What is the meaning of elepant?</button>
+        <button class="accordion">53. 
+        		Will the following program (i) compile successfully (ii) execute successfully<br>
+			class Kirti<br>
+			{<br>
+			 public static void Main(String args[])<br>
+			 {<br>
+			  System.out.println("Akash loves Kirti");<br>
+			 }<br>
+			}<br>
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Compile successfully but fails during execution, because main() method is not present. During compilation, the presence of main() method is not verified. Only when the JVM calls the main() method during execution, then only the presence of main() method is verified.</p>
         </div>
         
         <!-- 54 -->
-        <button class="accordion">54. What is the meaning of elepant?</button>
+        <button class="accordion">54. Is it necessary for all java programs to contain atleast one main() function somewhere for execution to begin ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>No, Applets are the java programs that get executed on a browser and do not have any main() function defined.</p>
         </div>
         
         <!-- 55 -->
-        <button class="accordion">55. What is the meaning of elepant?</button>
+        <button class="accordion">55.
+        		With respect to the statement - System.out.println();<br>
+			Answer the following questions :<br>
+			1 - What is System ?<br>
+			2 - What is out ?<br>
+			3 - What is println() ?<br>
+			4 - In which package is the System class defined ?<br>
+			5 - In which class is the out object defined ?<br>
+			6 - In which class is the println() method defined ?<br>
+			7 - out is an object of which class ?<br>
+			8 - What is PrintStream ?<br>
+			9 - In which package is the PrintStream class defined ?<br>
+			10 - Is out a static object ?<br>
+			11 - Is println() a static method ? 
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	1 - System is a class<br>
+			2 - out is an object<br>
+			3 - println() is a method<br>
+			4 - System class is defined in the package java.lang<br>
+			5 - The out object is defined in the class System.<br>
+			6 - The println() method is defined in the class PrintStream.<br>
+			7 - out is an object of PrintStream class that has been defined in the System class<br>
+			8 - PrintStream is a class<br>
+			9 - PrintStream class is defined in the java.io package<br>
+			10 - Yes, out is a static object because it is accessed directly using the class name as "System.out"<br>
+			11 - No, println() is not a static method because had it been static, we would have directly accessed it like "PrintStream.println();"<br>
+			Summarizing,<br>
+			<br>
+			System is a class that is present in the java.lang package. Since System class is present in the java.lang package, therefore there is not need of importing any package for using the statement System.out.println().<br>
+			<br>
+			out is an object of the class PrintStream but has been defined in the class System as a static object.<br>
+			<br>
+			PrintStream is a class that has been defined in the java.io package. It is this class in which the method println() has been defined.<br>
+			<br>
+			println() is a non-static method of the PrintStream class and is therefore accessed using the onject of the PrintStream class.<br>
+			<br>
+			package java.lang;<br>
+			class System<br>
+			{<br>
+			 public static java.io.PrintStream out;<br>
+			 ****<br>
+			 ****<br>
+			 ****<br>
+			}<br>
+			<br>
+			package java.io;<br>
+			class PrintStream<br>
+			{<br>
+			 public void println(String s)<br>
+			 {<br>
+			  ****<br>
+			 }<br>
+			 ****<br>
+			 ****<br>
+			}<br>
+          </p>
         </div>
         
         <!-- 56 -->
-        <button class="accordion">56. What is the meaning of elepant?</button>
+        <button class="accordion">56. Why cannot we directly create an object of the PrintStream class and using that object access the non-static method println() ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	We cannot create an object of the PrintStream class some way like : <br>
+			PrintStream ob = new PrintStream();<br>
+			ob.println("Akash");<br>
+			It is because, none of the constructor of the PrintStream class is a default constructor. All the constructors of this class are parameterized requiring a file path as an argument. Therefore, we cannot create object of the PrintStream class.
+          </p>
         </div>
         
         <!-- 57 -->
-        <button class="accordion">57. What is the meaning of elepant?</button>
+        <button class="accordion">57. In the statement - System.out.println(), the method println() which we are ultimately accessing belongs to a class that is defined in java.io package. Then why System.out.println() works even without importing java.io package in out program ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	When we import a package in our program say - import java.util.*; then it means that all the classes that are defined in the package util become a part of the file where this statement is written. Now, since all the classes of the package java.util become a part of the file, therefore everytime we are accessing some class of the java.util package in our program, we dont need to prefix java.util before it.<br>
+			<br>
+			So for not prefixing everytime the name of the package whenever we are accessing some class, we import packages. Now, in the statement - System.out.println(), we no where used PrintStream class (in writting) and therefore there is no need of importing the java.io package.<br>
+			<br>
+			Consider the example,<br>
+			PrintStream ps = System.out;<br>
+			Had this statement been present in your code, then since this statement mentions the PrintStream class, and had you not imported the package java.io in your code, the compiler would have flagged an error.<br>
+			However, the statement java.io.PrintStream ps = System.out; works perfectly fine without the need to import the java.io package.<br>
+          </p>
         </div>
         
         <!-- 58 -->
-        <button class="accordion">58. What is the meaning of elepant?</button>
+        <button class="accordion">58. Tell 2 differences between print() and println() method defined in the class PrintStream ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	1 - The println() method brings the cursor to the next line after printing where as the print() method does not brings the cursor to the next line after printing.<br>
+			<br>
+			2 - It is not mandatory to always pass an argument to the println() method (When this is done, the println() method simply brings the cursor to the next line) where as it is always mandatory to pass an argument to the print() method. It is because, in the class PrintStream, there exists a format of the println() method that does not has any parameter where as there does not exist any format of the print() method in the PrintStream class that does not have any parameter.<br>			          	
+          </p>
         </div>
         
         <!-- 59 -->
-        <button class="accordion">59. What is the meaning of elepant?</button>
+        <button class="accordion">59. 
+        		Consider the following code :<br>
+			<br>
+			int a = 10;<br>
+			if(a)<br>
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("TRUE");<br>
+			else<br>
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("FALSE");<br>
+			What would be the output :<br>
+			<br>
+			a) TRUE<br>
+			b) FALSE<br>
+			c) Compilation error<br>
+			d) Runtime error<br>
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>c)</p>
         </div>
         
         <!-- 60 -->
-        <button class="accordion">60. What is the meaning of elepant?</button>
+        <button class="accordion">60. Is Java a free form language ? Name 2 languages that are not free form ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, Java is a free form language. Haskell and Python are examples of languages that are not free form.</p>
         </div>
         
         <!-- 61 -->
-        <button class="accordion">61. What is the meaning of elepant?</button>
+        <button class="accordion">61. What are whitespaces ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	A whitespace is a character like any other character. But the difference between whitespace characters and other characters is that, whitespace characters are not visible on screen when printed where as other characters are visible on screeen when printed.<br>
+			There are 3 whitespace characters in Java :<br>
+			1 - Space<br>
+			2 - Tab <br>
+			3 - Newline<br>
+          </p>
         </div>
         
         <!-- 62 -->
-        <button class="accordion">62. What is the meaning of elepant?</button>
+        <button class="accordion">62. What is an escape character ? How is it different from escape sequence ? Explain clearly</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>TBD</p>
         </div>
         
         <!-- 63 -->
-        <button class="accordion">63. What is the meaning of elepant?</button>
+        <button class="accordion">63. What is the difference between an identifier and a literal ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>An identifier is the name given to variables, methods, classes, arrays, objects, strings etc. A literal is a value that is assigned to an identifier. For example, int a = 5;. In this statement, 'a' is an identifier whereas 5 is a literal</p>
         </div>
         
         <!-- 64 -->
-        <button class="accordion">64. What is the meaning of elepant?</button>
+        <button class="accordion">64. What are the rules for identifiers ?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+          	There are 2 rules for constructing identifiers in Java :<br>
+			<br>
+			1 - An identifier should not begin with a digit.<br>
+			2 - An identifier can contain only underscore('_') and dollar('$') as special symbol.<br>
+          </p>
         </div>
         
         <!-- 65 -->
-        <button class="accordion">65. What is the meaning of elepant?</button>
+        <button class="accordion">65.
+        		Consider the following identifiers :<br>
+			<br>
+			1 - _______<br>
+			2 - $$$$$$$<br>
+			<br>
+			Which of them is valid :<br>
+			<br>
+			a) only 1 is valid<br>
+			b) only 2 is valid<br>
+			c) both 1 and 2 are valid<br>
+			d) both 1 and 2 are invalid<br>
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 66 -->
-        <button class="accordion">66. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 67 -->
-        <button class="accordion">67. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 68 -->
-        <button class="accordion">68. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 69 -->
-        <button class="accordion">69. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 70 -->
-        <button class="accordion">70. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 71 -->
-        <button class="accordion">71. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 72 -->
-        <button class="accordion">72. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 73 -->
-        <button class="accordion">73. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 74 -->
-        <button class="accordion">74. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 75 -->
-        <button class="accordion">75. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 76 -->
-        <button class="accordion">76. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 77 -->
-        <button class="accordion">77. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 78 -->
-        <button class="accordion">78. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 79 -->
-        <button class="accordion">79. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 80 -->
-        <button class="accordion">80. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 81 -->
-        <button class="accordion">81. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 82 -->
-        <button class="accordion">82. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 83 -->
-        <button class="accordion">83. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 84 -->
-        <button class="accordion">84. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 85 -->
-        <button class="accordion">85. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 86 -->
-        <button class="accordion">86. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 87 -->
-        <button class="accordion">87. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 88 -->
-        <button class="accordion">88. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 89 -->
-        <button class="accordion">89. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 90 -->
-        <button class="accordion">90. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 91 -->
-        <button class="accordion">91. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 92 -->
-        <button class="accordion">92. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 93 -->
-        <button class="accordion">93. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 94 -->
-        <button class="accordion">94. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 95 -->
-        <button class="accordion">95. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 96 -->
-        <button class="accordion">96. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 97 -->
-        <button class="accordion">97. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 98 -->
-        <button class="accordion">98. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 99 -->
-        <button class="accordion">99. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 100 -->
-        <button class="accordion">100. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>c)</p>
         </div>
         
         <script>
