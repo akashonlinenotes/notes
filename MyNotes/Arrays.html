@@ -47,20 +47,50 @@
     </head>
     <body>
 
-        <h2>Sample</h2>
+        <h2>Arrays</h2>
         <!--  <p>In this document, we will be covering all abcd kdnf.</p> -->
         
         <!-- 01 -->
-        <button class="accordion">13-05-2020</button>
+        <button class="accordion">01. Continuous subarray with given sum. <a href="https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0">Ref</a></button>
         <div class="panel">
           <p>
-          	Created sample html file with 100 dummy questions and answers<br>
-          	Create new github account (@akashonlinenotes)<br>
-          	Initialized a new local repository and pushed the changes to remote.<br>
-          	Reminders setup on test device MOTO E<br>
-          	Completed 10 questions<br>
-          	Created bookmarks on chrome for github html pages
-          </p>
+          		<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">/*</span>
+<span style="color: #888888"> * Platform:- GeeksForGeeks</span>
+<span style="color: #888888"> * Problem:- https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0</span>
+<span style="color: #888888"> * My Solution:- https://practice.geeksforgeeks.org/viewSol.php?subId=2624ee4543e296ffe0eb53652abbda4b&amp;pid=590&amp;user=13akashnigam</span>
+<span style="color: #888888"> * Solution Date:- 05/14/2020</span>
+<span style="color: #888888"> */</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> String <span style="color: #0066BB; font-weight: bold">getContinousSubArrayIndexWithSum</span><span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> a<span style="color: #333333">[],</span> <span style="color: #333399; font-weight: bold">int</span> expectedSum<span style="color: #333333">)</span>
+<span style="color: #333333">{</span>
+	<span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>expectedSum<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span>
+		<span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;-1&quot;</span><span style="color: #333333">;</span>
+	<span style="color: #333399; font-weight: bold">int</span> leftPointer1 <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span>
+	<span style="color: #333399; font-weight: bold">int</span> leftPointer2 <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span>
+	<span style="color: #333399; font-weight: bold">int</span> currentSum <span style="color: #333333">=</span> a<span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">];</span>
+
+	<span style="color: #008800; font-weight: bold">while</span><span style="color: #333333">(</span>leftPointer1<span style="color: #333333">&lt;</span>a<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">&amp;&amp;</span> leftPointer2<span style="color: #333333">&lt;</span>a<span style="color: #333333">.</span><span style="color: #0000CC">length</span><span style="color: #333333">)</span>
+	<span style="color: #333333">{</span>
+		<span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>currentSum <span style="color: #333333">==</span> expectedSum<span style="color: #333333">)</span>
+			<span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #333333">+(</span>leftPointer1<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">)+</span><span style="background-color: #fff0f0">&quot; &quot;</span><span style="color: #333333">+(</span>leftPointer2<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">);</span>
+		<span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span><span style="color: #333333">(</span>currentSum <span style="color: #333333">&lt;</span> expectedSum<span style="color: #333333">)</span>
+		<span style="color: #333333">{</span>
+			leftPointer2<span style="color: #333333">++;</span>
+			<span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>leftPointer2 <span style="color: #333333">&lt;</span> a<span style="color: #333333">.</span><span style="color: #0000CC">length</span><span style="color: #333333">)</span>
+				currentSum <span style="color: #333333">=</span> currentSum <span style="color: #333333">+</span> a<span style="color: #333333">[</span>leftPointer2<span style="color: #333333">];</span>
+		<span style="color: #333333">}</span>
+		<span style="color: #008800; font-weight: bold">else</span>
+		<span style="color: #333333">{</span>
+			<span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>leftPointer1 <span style="color: #333333">&lt;</span> a<span style="color: #333333">.</span><span style="color: #0000CC">length</span><span style="color: #333333">)</span>
+			<span style="color: #333333">{</span>
+				currentSum <span style="color: #333333">=</span> currentSum <span style="color: #333333">-</span> a<span style="color: #333333">[</span>leftPointer1<span style="color: #333333">];</span>
+				leftPointer1<span style="color: #333333">++;</span>
+			<span style="color: #333333">}</span>
+		<span style="color: #333333">}</span>	
+	<span style="color: #333333">}</span>
+	<span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;-1&quot;</span><span style="color: #333333">;</span>
+<span style="color: #333333">}</span>
+</pre></div>
+		  </p>
         </div>
         
         <!-- 02 -->
