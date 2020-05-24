@@ -1,0 +1,714 @@
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .accordion 
+            {
+              background-color: #eee;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover 
+            {
+              background-color: #ccc;
+            }
+
+            .accordion:after 
+            {
+              content: '\002B';
+              color: #777;
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+            }
+
+            .active:after 
+            {
+              content: "\2212";
+            }
+
+            .panel 
+            {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            <font color="Blue">Java - The Complete Reference 11th Edition</font><br>
+            <br>
+            <font color="green">Chapter: Overview of Java</font>
+        </h2>
+        <!--  <p>In this document, we will be covering all abcd kdnf.</p> -->
+        
+        <marquee direction = "left"><font color="red"><b>NOTE:- Chapter 02 is not fully covered. Theory covered in the initial part is left and we are directly starting with "A first simple program" on page 82</b></font></marquee>
+        <br><br>
+        <!-- 01 -->
+        <button class="accordion">01. Write a simple java program, compile it and run it?</button>
+        <div class="panel">
+          <p>
+              Program:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82749499-3915bc80-9dc7-11ea-9c0e-9c3a6ab822c9.png"><br>
+              <br>
+              File saved as Akash.java<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82749736-e50bd780-9dc8-11ea-928d-8ad162864686.png"><br>
+              <br>
+              Compling the file Akash.java<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82749756-0bca0e00-9dc9-11ea-9582-ca9a2d9c99f0.png"><br>
+              <br>
+              Class file gets generated<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82749771-2308fb80-9dc9-11ea-81d6-c2480f9cb5f4.png"><br>
+              <br>
+              Executing the class file<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82749795-3d42d980-9dc9-11ea-8db4-037d96bd41ef.png"><br>
+              <br>
+              No file gets generated on execution<br>
+              
+          </p>
+        </div>
+        
+        <!-- 02 -->
+        <button class="accordion">02. FIB: In java source file is called ________ </button>
+        <div class="panel">
+          <p>Compliation unit</p>
+        </div>
+        
+        <!-- 03 -->
+        <button class="accordion">03. What is the general convention regarding naming of java source files?</button>
+        <div class="panel">
+          <p>The name of the java source file should be similar to the name of the class that contains the main() method</p>
+        </div>
+        
+        <!-- 04 -->
+        <button class="accordion">04. It it always mandatory to follow this convention? If not then why do we have this convention in place?</button>
+        <div class="panel">
+          <p>
+              No, it is not at all mandatory to follow the convention <br>
+              "The name of the java source file should be similar to the name of the class that contains the main() method"<br>
+              <br>
+              The reason for having such convention in place is that when the name of the java source file is same as the name of the class that contains the main() method, then the user need not remember the name of the source file and the class name separately.<br>
+              <br>
+              In general,<br><br>
+              File name is used during compilation as:- javac filename.java<br>
+              Class name is used during execution:- java [Name of the class file] (Class file gets generated for each class present in the jav source file)
+          </p>
+        </div>
+        
+        <!-- 05 -->
+        <button class="accordion">05. How manu files get generated after (i) compilation (ii) execution</button>
+        <div class="panel">
+          <p>
+              (i) The number of files that get generated after compilation = Number of classes present in the java source file<br>
+              <br>
+              (ii) The number of files that get generated after execution = 0
+          </p>
+        </div>
+        
+        <!-- 06 -->
+        <button class="accordion">06. Show that the number of files generated after compilation is similar to the number of classes present in the source file?</button>
+        <div class="panel">
+          <p>
+              File Sample.java<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82750047-42088d00-9dcb-11ea-8626-842d8a860691.png"><br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82750072-69f7f080-9dcb-11ea-9f2c-dc98cbe76214.png"><br><br>
+              After compilation:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82750110-9f9cd980-9dcb-11ea-8dd3-4d0758655a51.png"><br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82750134-bfcc9880-9dcb-11ea-8890-e34c6138d712.png">
+          </p>
+        </div>
+        
+        <!-- 07 -->
+        <button class="accordion">07. What is the extension of the files that get generated after complinng the java source file?</button>
+        <div class="panel">
+          <p>.class</p>
+        </div>
+        
+        <!-- 08 -->
+        <button class="accordion">08. What does the .class files contain?</button>
+        <div class="panel">
+          <p>Byte code</p>
+        </div>
+        
+        <!-- 09 -->
+        <button class="accordion">09. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 10 -->
+        <button class="accordion">10. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 11 -->
+        <button class="accordion">11. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 12 -->
+        <button class="accordion">12. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 13 -->
+        <button class="accordion">13. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 14 -->
+        <button class="accordion">14. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 15 -->
+        <button class="accordion">15. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 16 -->
+        <button class="accordion">16. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 17 -->
+        <button class="accordion">17. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 18 -->
+        <button class="accordion">18. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 19 -->
+        <button class="accordion">19. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 20 -->
+        <button class="accordion">20. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 21 -->
+        <button class="accordion">21. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 22 -->
+        <button class="accordion">22. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 23 -->
+        <button class="accordion">23. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 24 -->
+        <button class="accordion">24. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 25 -->
+        <button class="accordion">25. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 26 -->
+        <button class="accordion">26. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 27 -->
+        <button class="accordion">27. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 28 -->
+        <button class="accordion">28. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 29 -->
+        <button class="accordion">29. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 30 -->
+        <button class="accordion">30. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 31 -->
+        <button class="accordion">31. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 32 -->
+        <button class="accordion">32. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 33 -->
+        <button class="accordion">33. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 34 -->
+        <button class="accordion">34. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 35 -->
+        <button class="accordion">35. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 36 -->
+        <button class="accordion">36. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 37 -->
+        <button class="accordion">37. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 38 -->
+        <button class="accordion">38. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 39 -->
+        <button class="accordion">39. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 40 -->
+        <button class="accordion">40. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 41 -->
+        <button class="accordion">41. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 42 -->
+        <button class="accordion">42. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 43 -->
+        <button class="accordion">43. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 44 -->
+        <button class="accordion">44. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 45 -->
+        <button class="accordion">45. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 46 -->
+        <button class="accordion">46. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 47 -->
+        <button class="accordion">47. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 48 -->
+        <button class="accordion">48. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 49 -->
+        <button class="accordion">49. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 50 -->
+        <button class="accordion">50. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 51 -->
+        <button class="accordion">51. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 52 -->
+        <button class="accordion">52. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 53 -->
+        <button class="accordion">53. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 54 -->
+        <button class="accordion">54. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 55 -->
+        <button class="accordion">55. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 56 -->
+        <button class="accordion">56. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 57 -->
+        <button class="accordion">57. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 58 -->
+        <button class="accordion">58. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 59 -->
+        <button class="accordion">59. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 60 -->
+        <button class="accordion">60. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 61 -->
+        <button class="accordion">61. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 62 -->
+        <button class="accordion">62. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 63 -->
+        <button class="accordion">63. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 64 -->
+        <button class="accordion">64. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 65 -->
+        <button class="accordion">65. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 66 -->
+        <button class="accordion">66. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 67 -->
+        <button class="accordion">67. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 68 -->
+        <button class="accordion">68. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 69 -->
+        <button class="accordion">69. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 70 -->
+        <button class="accordion">70. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 71 -->
+        <button class="accordion">71. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 72 -->
+        <button class="accordion">72. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 73 -->
+        <button class="accordion">73. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 74 -->
+        <button class="accordion">74. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 75 -->
+        <button class="accordion">75. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 76 -->
+        <button class="accordion">76. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 77 -->
+        <button class="accordion">77. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 78 -->
+        <button class="accordion">78. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 79 -->
+        <button class="accordion">79. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 80 -->
+        <button class="accordion">80. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 81 -->
+        <button class="accordion">81. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 82 -->
+        <button class="accordion">82. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 83 -->
+        <button class="accordion">83. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 84 -->
+        <button class="accordion">84. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 85 -->
+        <button class="accordion">85. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 86 -->
+        <button class="accordion">86. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 87 -->
+        <button class="accordion">87. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 88 -->
+        <button class="accordion">88. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 89 -->
+        <button class="accordion">89. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 90 -->
+        <button class="accordion">90. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 91 -->
+        <button class="accordion">91. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 92 -->
+        <button class="accordion">92. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 93 -->
+        <button class="accordion">93. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 94 -->
+        <button class="accordion">94. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 95 -->
+        <button class="accordion">95. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 96 -->
+        <button class="accordion">96. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 97 -->
+        <button class="accordion">97. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 98 -->
+        <button class="accordion">98. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 99 -->
+        <button class="accordion">99. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <!-- 100 -->
+        <button class="accordion">100. What is the meaning of elepant?</button>
+        <div class="panel">
+          <p>Elephant is the largest animal on earth</p>
+        </div>
+        
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+
+    </body>
+</html>
