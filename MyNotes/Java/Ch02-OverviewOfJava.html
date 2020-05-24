@@ -142,555 +142,472 @@
         </div>
         
         <!-- 09 -->
-        <button class="accordion">09. What is the meaning of elepant?</button>
+        <button class="accordion">09. What happens when a java file contains multiple classes but none of them have main() method is (i) compiled (ii) Executed?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              (i) On compilation, class files correspnding to all classes get created with the same name as that of the class<br>
+              <br>
+              (ii) On executing any particular class file, error occurs since on execution, JVM issues a call to main() method of the class that gets executed.
+          </p>
         </div>
         
         <!-- 10 -->
-        <button class="accordion">10. What is the meaning of elepant?</button>
+        <button class="accordion">10. What happens when a class file without main() method is executed?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Error main() method not found is displayed.<br><br>
+             <img src="https://user-images.githubusercontent.com/65285668/82750839-aaa63880-9dd0-11ea-8c24-c1b8ded899a3.png">
+          </p>
         </div>
         
         <!-- 11 -->
-        <button class="accordion">11. What is the meaning of elepant?</button>
+        <button class="accordion">11. What happens when a java file containing multiple classes such that each class has main() method is (i) compiled (ii) executed?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              (i) On complation, class files corresponding to all classes get generated<br>
+              <br>
+              (ii) On execution, the class file which is executed gets executed since it contains the main() method.
+          </p>
         </div>
         
         <!-- 12 -->
-        <button class="accordion">12. What is the meaning of elepant?</button>
+        <button class="accordion">12. Is it possbile to have more than one main() method inside a java class?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              Yes, given that the type or count of params are different. Note that return type in this case does not play any role which means that if you define main() method simply changing the return type it flags an error. This is because JVM issues call to main() method as Classname.main(<params fetched from command line as strings>) and therefore JVM won't be able to differentiate between main() methods having different return types. This error gets flagged at compile time itself.<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82750984-c52ce180-9dd1-11ea-90c8-0ab489b654c2.png"><br><br>
+              On execution:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82751015-f1486280-9dd1-11ea-9c48-4b2ccb45c100.png"><br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82751153-fc4fc280-9dd2-11ea-910b-ff6e809fdf25.png"><br><br>
+              On compilation:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82751174-230df900-9dd3-11ea-8ac3-87f535c9e592.png"><br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82751249-944dac00-9dd3-11ea-9806-bcb5ec1e280c.png"><br><br>
+              On execution:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82751273-c3641d80-9dd3-11ea-8a15-3b57170da459.png"><br>
+          </p>
         </div>
         
         <!-- 13 -->
-        <button class="accordion">13. What is the meaning of elepant?</button>
+        <button class="accordion">13. Is java a case sensitive language?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, Main() and main() are different.</p>
         </div>
         
         <!-- 14 -->
-        <button class="accordion">14. What is the meaning of elepant?</button>
+        <button class="accordion">14. What is the new feature related to compilation and execution of java code introduced with JDK 11?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              With JDK 11, java has simplified the process of converting java source code to execcutable code from 2 steps to just 1 step.<br>
+              <br>
+              Before JDK 11:-<br>
+              Source code ----> javac filename.java ----> Byte code (.class files) -----> java [class file] -----> Executable code <br>
+              <br>
+              From JDK 11:-<br>
+              Source code -----> java filename.java ------> Executable code
+          </p>
         </div>
         
         <!-- 15 -->
-        <button class="accordion">15. What is the meaning of elepant?</button>
+        <button class="accordion">
+            15. <marquee direction="left"><font color="red"><b>After installing JDK 11, frame questions for directly executing java source files from appendix on page 1766</b></font></marquee>
+        </button>
         <div class="panel">
           <p>Elephant is the largest animal on earth</p>
         </div>
         
         <!-- 16 -->
-        <button class="accordion">16. What is the meaning of elepant?</button>
+        <button class="accordion">16. What is the extension of java source files?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>.java</p>
         </div>
         
         <!-- 17 -->
-        <button class="accordion">17. What is the meaning of elepant?</button>
+        <button class="accordion">17. What is the syntax for compiling the java source file?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>javac filename.java</p>
         </div>
         
         <!-- 18 -->
-        <button class="accordion">18. What is the meaning of elepant?</button>
+        <button class="accordion">18. What is the extension of the file that gets generated onn compiling the java source code? What does this file contain?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>.class, byte code version of the source code</p>
         </div>
         
         <!-- 19 -->
-        <button class="accordion">19. What is the meaning of elepant?</button>
+        <button class="accordion">19. FIB: Byte code is executed by _____</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>JVM (part of JRE)</p>
         </div>
         
         <!-- 20 -->
-        <button class="accordion">20. What is the meaning of elepant?</button>
+        <button class="accordion">20. What is the syntax for running a java program?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>java [name of the class file without extension]<br>Note: java is called "Java Application Launcher"</p>
         </div>
         
         <!-- 21 -->
-        <button class="accordion">21. What is the meaning of elepant?</button>
+        <button class="accordion">21. What are comments?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Comments are the remarks that the programmer enters in his code to explain what his code does.</p>
         </div>
         
         <!-- 22 -->
-        <button class="accordion">22. What is the meaning of elepant?</button>
+        <button class="accordion">22. Are comments compiled by the compiler?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>No, the contents of the comments are ignored by the compiler.</p>
         </div>
         
         <!-- 23 -->
-        <button class="accordion">23. What is the meaning of elepant?</button>
+        <button class="accordion">23. At which line does the java program begins execution?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>From the line in the class file that contains the main() method.</p>
         </div>
         
         <!-- 24 -->
-        <button class="accordion">24. What is the meaning of elepant?</button>
+        <button class="accordion">24. FIB: Java programs begin executionn by calling ______?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>main() method</p>
         </div>
         
         <!-- 25 -->
-        <button class="accordion">25. What is the meaning of elepant?</button>
+        <button class="accordion">25. Explain why the main() method is always public? Can we use private/protected in place of public</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>The main() method is always public. It is because main() method is called by JVM when the Java Application Launcher is invoked and public keyword grants access to any code outside the class in which main() method is present to access/call the main() method. Private or Protected cannot be used with main() method.</p>
         </div>
         
         <!-- 26 -->
-        <button class="accordion">26. What is the meaning of elepant?</button>
+        <button class="accordion">26. Explain why the main() method is always static?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>The main() method is called by JVM when the Java Application Launcher is invoked. JVM does not instantiate the class in which the main() method is defined to access the main() method. The main() method is simply accessed by JVM using the class name on which the Java Application Launcher is invoked like Classname.main(). It is therefore mandatory for main() method to be static.</p>
         </div>
         
         <!-- 27 -->
-        <button class="accordion">27. What is the meaning of elepant?</button>
+        <button class="accordion">27. Explain why void is used as return type of main() method?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>The caller of the main() method is JVM. There is no point of returning any value to the JVM since the user does not have access to the JVM code. Therefore the return type of main() method is void.</p>
         </div>
         
         <!-- 28 -->
-        <button class="accordion">28. What is the meaning of elepant?</button>
+        <button class="accordion">28. What happens when the return type of main() method is specified as 'int' on (i) compilation (ii) execution?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              1. On compilation, no error is reported and the file gets compiled successfully.
+              <br><br>
+              2. On execution, error: "Main method must return a value of type void" gets displayed.<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82756502-48612e00-9df8-11ea-96de-0864e9569152.png"><br><br>
+              Compilation & Execution:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82756540-76467280-9df8-11ea-8365-86238b90f849.png">
+          </p>
         </div>
         
         <!-- 29 -->
-        <button class="accordion">29. What is the meaning of elepant?</button>
+        <button class="accordion">29. What happens when main() method is not declared static on (i) compilation (ii) execution?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              1. On compilation, no error is reported and the file gets compiled successfully.
+              <br><br>
+              2. On execution, error: "Main method is not static" gets displayed.<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82756625-e7862580-9df8-11ea-8bb8-ae9a015b1f7b.png"><br><br>
+              Compilation & Execution:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82756634-01c00380-9df9-11ea-9e39-203c8d224a62.png">
+          </p>
         </div>
         
         <!-- 30 -->
-        <button class="accordion">30. What is the meaning of elepant?</button>
+        <button class="accordion">30. What happens when main() method is declared private instead of public on (i) compilation (ii) execution?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              1. On compilation, no error is reported and the file gets compiled successfully.
+              <br><br>
+              2. On execution, error: "Main method not found in class" gets displayed.<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82756706-709d5c80-9df9-11ea-97da-e9f91f103c12.png"><br><br>
+              Compilation & Execution:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82756730-8c086780-9df9-11ea-9fc0-106f98b544ec.png">
+          </p>
         </div>
         
         <!-- 31 -->
-        <button class="accordion">31. What is the meaning of elepant?</button>
+        <button class="accordion">31. Write the syntax for printing output on console?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              System.out.println()
+              System.out.print()
+          </p>
         </div>
         
         <!-- 32 -->
-        <button class="accordion">32. What is the meaning of elepant?</button>
+        <button class="accordion">32. Explain System.out.println()?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              System - System is a class present in java.lang package. It has 3 static fields - in, out and err.<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82758821-88c7a880-9e06-11ea-9b75-c32bcdbf5e0f.png"><br>
+              <br>
+              out - out is static reference to PrintStream class defined in the System class <br>
+              <br>
+              prinln() - println() is a method defined in the PrintStream class <br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82758960-68e4b480-9e07-11ea-9da2-8a09e2c71cc6.png">
+          </p>
         </div>
         
         <!-- 33 -->
-        <button class="accordion">33. What is the meaning of elepant?</button>
+        <button class="accordion">
+            33. Answer the following questions w.r.t System.out.println()? <br><br>
+              1. What is System?<br>
+              2. What is out?<br>
+              2. What is println?<br>
+              4. In which package is System class present?<br>
+              5. out is member of which class?<br>
+              6. out is reference to which class?<br>
+              7. println() method is present in which class?<br>
+              8. PrintStream class is present in which package?<br>
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+             1. System is a class.<br>
+             2. out is a reference to PrintStream class<br>
+             3. println is a method<br>
+             4. System class is present in java.lang package<br>
+             5. out is member of System class<br>
+             6. out is reference of PrintStream class<br>
+             7. println method is present in PrintStream class<br>
+             8. PrintStream class is present in java.io package
+          </p>
         </div>
         
         <!-- 34 -->
-        <button class="accordion">34. What is the meaning of elepant?</button>
+        <button class="accordion">34. What is a variable?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Variable is a named location in memory.</p>
         </div>
         
         <!-- 35 -->
-        <button class="accordion">35. What is the meaning of elepant?</button>
+        <button class="accordion">35. What is the syntax for declaring a variable in java?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p><i>data-type identifier;</i><br>
+              <br>Eg,<br>
+              int a;
+          </p>
         </div>
         
         <!-- 36 -->
-        <button class="accordion">36. What is the meaning of elepant?</button>
+        <button class="accordion">36. What is the syntax for assigning value to a variable?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p><i>identifier = value;</i></p>Eg, <br>
+            <br>
+            a = 10; (here = is the assignment operator)
         </div>
         
         <!-- 37 -->
-        <button class="accordion">37. What is the meaning of elepant?</button>
+        <button class="accordion">37. What is the syntax for declaring and defining a variable together?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p><i>data-type identifier = value;</i></p>Eg,<br>
+            int a = 10;
         </div>
         
         <!-- 38 -->
-        <button class="accordion">38. What is the meaning of elepant?</button>
+        <button class="accordion">38. What is the rule for variable?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>A variable must be declared before use.</p>
         </div>
         
         <!-- 39 -->
-        <button class="accordion">39. What is the meaning of elepant?</button>
+        <button class="accordion">39. Is it possible to declare more than one variables together?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, more than one variables can be declared together given that they have the same datatype. Following is the syntax,<br>
+            <i>data-type identifier1, identifier2, identifier3;</i>      
+          </p>
         </div>
         
         <!-- 40 -->
-        <button class="accordion">40. What is the meaning of elepant?</button>
+        <button class="accordion">40. Is it possible to assign same value to all the variables together? What is the only limitation</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              Yes, the only limitation is that this is not supported when declaration and definition of multiple variables is done together.<br>
+              <br>
+              Eg,<br><br>
+              <i>int a,b,c,d;<br>
+                 a = b = c = d = 10;   //works  
+              </i>
+              <br><br>
+              <i>int a = int b = int c = int d = 10;    // does not work</i>
+              <br><br>
+              <i>int a, b, c, d = 10;   // does not work</i><br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82759651-60db4380-9e0c-11ea-84c9-36719819b8cf.png" width="400" height="250">
+              <br><br>
+              Compilation & Execution:-<br><br>
+              <img src="https://user-images.githubusercontent.com/65285668/82759730-ca5b5200-9e0c-11ea-8c17-5e7b008bea30.png">
+          </p>
         </div>
         
         <!-- 41 -->
-        <button class="accordion">41. What is the meaning of elepant?</button>
+        <button class="accordion">41. What is the syntax of if statement?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p><i>if(condition) statement;</i><br><br>If the condition evaluates to true, statement gets executed else it is skipped.</p>
         </div>
         
         <!-- 42 -->
-        <button class="accordion">42. What is the meaning of elepant?</button>
+        <button class="accordion">42. What is the use of loops?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>They provide a way to repeatedly execute some task.</p>
         </div>
         
         <!-- 43 -->
-        <button class="accordion">43. What is the meaning of elepant?</button>
+        <button class="accordion">43. What is the syntax for for loop?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p><i>for(initialization; condition; iteration) statement;</i></p>
         </div>
         
         <!-- 44 -->
-        <button class="accordion">44. What is the meaning of elepant?</button>
+        <button class="accordion">44. What mechanism does java provide to group two or more statements together?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>code blocks {}<br><br>
+             Note that code blocks use curly braces.
+          </p>
         </div>
         
         <!-- 45 -->
-        <button class="accordion">45. What is the meaning of elepant?</button>
+        <button class="accordion">45. What is the characteristic of code block?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Code blocks can be used at any place where a single statement can be used.</p>
         </div>
         
         <!-- 46 -->
-        <button class="accordion">46. What is the meaning of elepant?</button>
+        <button class="accordion">46. What is the use of code blocks?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>To create inseperable units of code</p>
         </div>
         
         <!-- 47 -->
-        <button class="accordion">47. What is the meaning of elepant?</button>
+        <button class="accordion">47. What is a free-form language? Is java a free form language?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>A language is called free form language if it has no special indentation rules. Since in java, there are no special indentation rules, java is a free form language.</p>
         </div>
         
         <!-- 48 -->
-        <button class="accordion">48. What is the meaning of elepant?</button>
+        <button class="accordion">48. What is a whitespace? Name all whitespace characters in java?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>A whitespace is a character which when typed does not appear on the screen. Java has 4 whitespace characters:-<br>
+              1. Space<br>
+              2. Tab<br>
+              3. Enter or Newline<br>
+              4. Next page or Form feed<br>
+          </p>
         </div>
         
         <!-- 49 -->
-        <button class="accordion">49. What is the meaning of elepant?</button>
+        <button class="accordion">49. What are identifiers?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Identifiers are the names given to basically anything like classes, interfaces, methods, variables, objects etc.</p>
         </div>
         
         <!-- 50 -->
-        <button class="accordion">50. What is the meaning of elepant?</button>
+        <button class="accordion">50. What is the rule for creating an identifier?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              1. An identifier can contain alphabets (upper case or lower case) & numbers.<br>
+              2. Only two special characters are allowed, dollar ($) and underscore (_) <br>
+              3. An identifier should not begin with a digit.
+          </p>
         </div>
         
         <!-- 51 -->
-        <button class="accordion">51. What is the meaning of elepant?</button>
+        <button class="accordion">51. Can identifiers start with dollar or underscore?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Yes, they should not start with digits, they can start with dollar or underscore.</p>
         </div>
         
         <!-- 52 -->
-        <button class="accordion">52. What is the meaning of elepant?</button>
+        <button class="accordion">52. Are these valid <br>
+            (i) <i>int $ = 10;</i><br>
+            (ii) <i>int _ = 20;</i>
+        </button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              Yes, both (i) and (ii) are valid since both dollar and underscore can be used as identifers and also there is no restriction like they should not begin with dollar or uunderscore. Reference:-<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82761444-37c0b000-9e18-11ea-8054-f05c9d2ce80f.png"><br>
+              <br>
+              Compilation & Execution:-<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82761474-650d5e00-9e18-11ea-8ac0-0668c6f1f7d4.png">
+          </p>
         </div>
         
         <!-- 53 -->
-        <button class="accordion">53. What is the meaning of elepant?</button>
+        <button class="accordion">53. What are literals?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Literal is a value that is assigned to the identifer. Examples,<br>
+              <br>
+              10, 3.14, 'a', "Akash" are all literals <br>
+              <br>
+              <i>int a = 10;</i><br><br>
+              In the statement above, a is an identifer and 10 is a literal.
+          </p>
         </div>
         
         <!-- 54 -->
-        <button class="accordion">54. What is the meaning of elepant?</button>
+        <button class="accordion">54. What are comments? How many types of comments are available in java? Explain?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              Comments are the statements which the programmer adds to the code to explain what the code is doing. <br>
+              <br>
+              The characterisitic property of comments is that, they are simply ignored by the compiler. <br>
+              <br>
+              In java, there are 3 types of comments:-<br>
+              <br>
+              1. <b>Single line comments</b>:- They begin with two forward slashes and end with the line. They are used to comment only one line.<br><br>
+              2. <b>Multi line comments</b>:- They begin with a forward slash and a asterisk, extend over multiple lines and end with a asterisk and a forward slash. They are used to comment multiple lines together. Note:- Multi line comments can also be used in a single line but using like that does not make sense when single line comments are already there for the purpose.<br><br>
+              3. <b>Documentation comments</b>:- They begin with a forward slash and two asterisk symbols, stretch over multiple lines and end with an asterisk symbol and a forward slash. They are used to generate method documentation.<br><br>
+              
+              <img src="https://user-images.githubusercontent.com/65285668/82761759-6b043e80-9e1a-11ea-99ee-b6a9a85ece20.png"><br><br>
+              <font color="red"><b>Note:- Waatch a video for the working of documentation comment and then add questions.</b></font>
+          </p>
         </div>
         
         <!-- 55 -->
-        <button class="accordion">55. What is the meaning of elepant?</button>
+        <button class="accordion">55. What are seperators? How many seperators does java have?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              Seperators are characters or group of characters that have a special meaning. Java has 9 seperators used for different purposes. Refer below:-<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82761897-4e1c3b00-9e1b-11ea-9835-39b8b68f6cb0.png">
+          </p>
         </div>
         
         <!-- 56 -->
-        <button class="accordion">56. What is the meaning of elepant?</button>
+        <button class="accordion">56. What are keywords? How many keywords does java have?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>Keywords are the reserved words that cannot be used as identifiers. Java has 61 keywords.</p>
         </div>
         
         <!-- 57 -->
-        <button class="accordion">57. What is the meaning of elepant?</button>
+        <button class="accordion">57. Name 3 words which are not part of Java keywords but still cannot be used as identifiers?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              true, false and null<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82762070-7a848700-9e1c-11ea-8ab1-9bf8bf4c368f.png"><br>
+              <br>
+              Compilation:-<br>
+              <br>
+              <img src="https://user-images.githubusercontent.com/65285668/82762088-95ef9200-9e1c-11ea-8be4-f6bf4ec98738.png">
+          </p>
         </div>
         
         <!-- 58 -->
-        <button class="accordion">58. What is the meaning of elepant?</button>
+        <button class="accordion">58. Give an important point w.r.t underscore?</button>
         <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 59 -->
-        <button class="accordion">59. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 60 -->
-        <button class="accordion">60. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 61 -->
-        <button class="accordion">61. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 62 -->
-        <button class="accordion">62. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 63 -->
-        <button class="accordion">63. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 64 -->
-        <button class="accordion">64. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 65 -->
-        <button class="accordion">65. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 66 -->
-        <button class="accordion">66. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 67 -->
-        <button class="accordion">67. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 68 -->
-        <button class="accordion">68. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 69 -->
-        <button class="accordion">69. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 70 -->
-        <button class="accordion">70. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 71 -->
-        <button class="accordion">71. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 72 -->
-        <button class="accordion">72. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 73 -->
-        <button class="accordion">73. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 74 -->
-        <button class="accordion">74. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 75 -->
-        <button class="accordion">75. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 76 -->
-        <button class="accordion">76. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 77 -->
-        <button class="accordion">77. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 78 -->
-        <button class="accordion">78. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 79 -->
-        <button class="accordion">79. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 80 -->
-        <button class="accordion">80. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 81 -->
-        <button class="accordion">81. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 82 -->
-        <button class="accordion">82. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 83 -->
-        <button class="accordion">83. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 84 -->
-        <button class="accordion">84. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 85 -->
-        <button class="accordion">85. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 86 -->
-        <button class="accordion">86. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 87 -->
-        <button class="accordion">87. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 88 -->
-        <button class="accordion">88. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 89 -->
-        <button class="accordion">89. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 90 -->
-        <button class="accordion">90. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 91 -->
-        <button class="accordion">91. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 92 -->
-        <button class="accordion">92. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 93 -->
-        <button class="accordion">93. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 94 -->
-        <button class="accordion">94. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 95 -->
-        <button class="accordion">95. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 96 -->
-        <button class="accordion">96. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 97 -->
-        <button class="accordion">97. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 98 -->
-        <button class="accordion">98. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 99 -->
-        <button class="accordion">99. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
-        </div>
-        
-        <!-- 100 -->
-        <button class="accordion">100. What is the meaning of elepant?</button>
-        <div class="panel">
-          <p>Elephant is the largest animal on earth</p>
+          <p>
+              Although identifer can contain underscore, use of single underscore as identifier is prohibited from JDK 9 since single underscore is a part of reserved keywords.<br>
+              <br>
+              <font color="red"><b>Prove this when you have JDK 9 installed.</b></font>
+          </p>
         </div>
         
         <script>
