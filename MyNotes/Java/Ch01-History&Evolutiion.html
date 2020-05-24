@@ -1,0 +1,257 @@
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .accordion 
+            {
+              background-color: #eee;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover 
+            {
+              background-color: #ccc;
+            }
+
+            .accordion:after 
+            {
+              content: '\002B';
+              color: #777;
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+            }
+
+            .active:after 
+            {
+              content: "\2212";
+            }
+
+            .panel 
+            {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Java - The Complete Reference 11th Edition<br>
+            <br>
+            Chapter: History & Evolution of Java</h2>
+        <!--  <p>In this document, we will be covering all abcd kdnf.</p> -->
+        
+        <!-- 01 -->
+        <button class="accordion">01. What is java?</button>
+        <div class="panel">
+          <p>Java is a programming language.</p>
+        </div>
+        
+        <!-- 02 -->
+        <button class="accordion">02. FIB: Java is related to ________ which is a direct descendant of ________?</button>
+        <div class="panel">
+          <p>C++, C</p>
+        </div>
+        
+        <!-- 03 -->
+        <button class="accordion">03. Name some languages that existed before Java, C++ and C?</button>
+        <div class="panel">
+          <p>BASIC, COBOL and FORTRAN</p>
+        </div>
+        
+        <!-- 04 -->
+        <button class="accordion">04. What is Object Oriented Programming (OOP) and why was it needed?</button>
+        <div class="panel">
+          <p>
+              OOP i.e Object Oriented Programming is a programming methodology that helps organize complex programs through the use of inheritance, encapsulation, and polymorphism.<br>
+              <br>
+              Before Object Oriented Programming, Structured Programming was prevelant (languages like C were based on structured programming). While structured programming enabled programmers to write moderately complex programs very easily, but when the size of the program reaches a certain size, its complexity exceeded what a programmer can manage. Therefore a need for a way of programming that can help managing large volumes of code effeciently was felt. The answer to this problem was Object Oriented Programming.
+          </p>
+        </div>
+        
+        <!-- 05 -->
+        <button class="accordion">05. FIBs:<br>
+            <br>
+            C was developed by _________ in _________<br>
+            C++ was developed by _________ in _________<br>
+            Java was developed by _________ in _________<br>
+        </button>
+        <div class="panel">
+          <p>
+              Dennis Ritchie, Early 1970's<br>
+              Bjarne Stroustrup, 1979<br>
+              James Gosling, 1991
+          </p>
+        </div>
+        
+        <!-- 06 -->
+        <button class="accordion">06. FIB: Java was initially called _____ and was rennamed to java in _________?</button>
+        <div class="panel">
+          <p>Oak, 1995</p>
+        </div>
+        
+        <!-- 07 -->
+        <button class="accordion">07. Why was Java invented when we already had C and C++ existing?</button>
+        <div class="panel">
+          <p>C was based on structured programming and the code was difficult to manage as the size of the program grew.<br>
+             To solve this problem, C++ was invented which allowed organizing big peices of code through the use of classes. (C++ was initially named C with Classes). <br>
+             The problem with languages like C and C++ was, they were not platform independent or architecture neutral which meant that the code written using C/C++ could be compliled using only specific compilers. This meant that, the compiler required within a microwave oven and remote control should be the same.A language was needed which could be compiled by any type of complier. Java was the solution. Code written in java can be plugged into remote ccontrol and microwave owen without worrying about the compilers used internally.   
+          </p>
+        </div>
+        
+        <!-- 08 -->
+        <button class="accordion">08. Apart from platform independent nature of Java, what was the other factor that made Java most widely used language?</button>
+        <div class="panel">
+          <p>WWW (World Wide Web). Success of WWW needed portable programs (programs that can be executed on any ennvironment) and Java was the only solution that time.</p>
+        </div>
+        
+        <!-- 09 -->
+        <button class="accordion">09. FIB: C++ is called ____________ and Java is called ___________</button>
+        <div class="panel">
+          <p>C with classes, Internet version of C++</p>
+        </div>
+        
+        <!-- 10 -->
+        <button class="accordion">10. What is an applet?</button>
+        <div class="panel">
+          <p>An applet is a special kind of Java program that is designed to be transmitted over the internet (from server to client) and gets automatically executed inside java enabled web browser on the client side.</p>
+        </div>
+        
+        <!-- 11 -->
+        <button class="accordion">11. What were the 3 major impacts of Java on internet?</button>
+        <div class="panel">
+          <p>
+              1. Java gave applets for use over the internet:- Java applets are java programs that were initiated from the server side and were executed on the client side. They were mostly used to display the information retreived from the server to the client.<br>
+              <br>
+              2. Java programs promised security to client machine when downloaded from internet:- The program/application which the user downloads on his machine can get access to the system resrouces and send back confidential info over the network to designated servers. To prevent this security breach, java allowed java applications/programs downloaded over the internet on client machine to be confined only to the Java execution environment and prevented the java programs from accessing other parts of the computer.<br>
+              <br>
+              3. Java programs guaranteed executiion on any environment (comnination of OS, CPU's architecture etc):- The program transmitted from server over the internet to the client computer must get executed on it regardless of what environment it has i.e the same application code should work on all computers connected to the internet. The programs written in java can be executed on any environment and therefore java became the most popular programming language of the WWW.
+          </p>
+        </div>
+        
+        <!-- 12 -->
+        <button class="accordion">12. What is Byte code?</button>
+        <div class="panel">
+          <p>Byte code is highly optimized set of instructions which is executed by JVM (which is part of JRE)</p>
+        </div>
+        
+        <!-- 13 -->
+        <button class="accordion">13. What is the output when a java program is compiled by the Java compiler?</button>
+        <div class="panel">
+          <p>Byte code</p>
+        </div>
+        
+        <!-- 14 -->
+        <button class="accordion">14. How is java different from other programming languages?</button>
+        <div class="panel">
+          <p>In most programming languages, the source code is directly converted into executable code by the compiler. However, in case of java, on compiilation the java source code is first converted to an intermediate form called the byte code which is later converted into the executable code.</p>
+        </div>
+        
+        <!-- 15 -->
+        <button class="accordion">15. FIB: Java program is executed by _____ which is a part of _________</button>
+        <div class="panel">
+          <p>JVM, JRE</p>
+        </div>
+        
+        <!-- 16 -->
+        <button class="accordion">16. What if Java source code was directly converted to executable code?</button>
+        <div class="panel">
+          <p>Then different versions of the same java program need to be created for executing it on each different type of CPU connected to the internet.</p>
+        </div>
+        
+        <!-- 17 -->
+        <button class="accordion">17. What are the 2 main advantages of having byte code in place in case of Java?</button>
+        <div class="panel">
+          <p>
+              1. The presence of byte code makes java programs portable:- Once the source code is converted to byte code, this byte code can be executed on any environment that has JVM/JRE installed. If byte code was not there, then different versions of the same program need to be created to run them on differing environment configurations.<br>
+              <br>
+              2. The presence of byte code makes java programs secure to execute:- Byte code is executed by JVM. Before JVM executes the byte code, it creates a restricted execution environment (called sandbox) which does not allow the java program (byte code) to gain access to other system resources there by ensuring security of the system on which the java programs are executed.   
+          </p>
+        </div>
+        
+        <!-- 18 -->
+        <button class="accordion">18. What is the drawback of having byte code in place in case of Java?</button>
+        <div class="panel">
+          <p>The performace of Java is slightly compromised. The time taken by java programs for converting the java source code into executable code is slightly higher than those programming languages in which the source code gets directly compiled to executable code.</p>
+        </div>
+        
+        <!-- 19 -->
+        <button class="accordion">19. Is the performance of java significantly compromised due to the presence of byte code? Why?</button>
+        <div class="panel">
+          <p>No, after the java source code is converted to byte code by java compiler, the conversion from byte code to executable code happens much faster than normal. This happens due to the presence of JIT (Just-In-Time compiler) in JVM (which is part of JRE) which does not convert all the byte code into executable code at once, instead convertion of byte code to executable code happens piecce by piece as needed during execution. JIT provides significant performance boost to Java</p>
+        </div>
+        
+        <!-- 20 -->
+        <button class="accordion">20. Why did applets got deprecated?</button>
+        <div class="panel">
+          <p>
+              For applets to run, java plugin should be installed on the web browser. These days, modern browsers dont have java plugin installed and hence applets were deprecated with release of JDK 11.
+          </p>
+        </div>
+        
+        <!-- 21 -->
+        <button class="accordion">21. What is the frequency of Java releases?</button>
+        <div class="panel">
+          <p>
+              Every six months, March and September of every year. Eg,<br>
+              JDK 9 was released in September 2017, JDK 10 got released in March 2018.
+          </p>
+        </div>
+        
+        <!-- 22 -->
+        <button class="accordion">22. FIB: Java programs that run on the client side are called _________ where as the java programs that run on the server are called _________ </button>
+        <div class="panel">
+          <p>Applets, Servlets</p>
+        </div>
+        
+        <!-- 23 -->
+        <button class="accordion">23. What is the use of servlets?</button>
+        <div class="panel">
+          <p>Servlets help in making dynamic websites by making the dynamic information (eg, latest updated price of an item) available to the client side (browser)</p>
+        </div>
+        
+        <!-- 24 -->
+        <button class="accordion">24. What are the various characteristics of Java?</button>
+        <div class="panel">
+          <p>
+              1. <b>Portability</b>:- The presence of byte code in java make the java programs portable because this byte code can be execcuted on any machine connnected to the internet that has JVM (paart of JRE) installed on it. (Note: Different types of JVM exists for different environments) <br>
+              <br>
+              2. <b>Security</b>:- Again, the presence of byte code in java make the java programs secure. Before the byte code is executed by JVM, JVM creates a restricted execution environment called sandbox which prevents the byte code from accessing any other system resource thereby securing the client machine. <br>
+              <br>
+              3. <b>Object Oriented</b>:- Java is object orinted programming language supporting all OOPs principles.<br>
+              <br>
+          </p>
+        </div>
+        <br><r></r>
+        <marquee direction = "left"><font color="red"><b>NOTE:- Chapter 01 is not fully covered. Resume framing questions from "The Java Buzzwords" on page 62</b></font></marquee>
+        
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+
+    </body>
+</html>
